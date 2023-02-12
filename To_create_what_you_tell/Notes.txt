@@ -1,0 +1,95 @@
+To Create What You Tell: Generating Videos from Captions
+
+in this paper, we present a novel temporal GANs conditioning on
+captions, namely TGANs-C, in which the input to the generator network 
+is a concatenation of a latent noise vector and caption embedding, and then 
+transformed into a frame sequence with 3D spatio-temporal convolutions.
+
+this discriminator additionally notes whether the video matches the correct caption.
+
+our discriminator additionally notes whether the video matches the correct caption.
+In particular, the discriminator network consists of three discriminator
+1) video discriminator classifying realisitc videos from generated ones
+2) optimizes video-caption matching, frame discriminator discriminating between 
+   real and fake frames and aliging frames with conditioning caption
+3) motion discriminator emphasizing the philosophy that the adjacent frames in 
+   the generated videos should be smoothly connected as in real ones.
+
+two synthetic datesets-SBMG and TBMG
+real-world dataset- MSVD
+
+this paper extends the recipe of GANs and presents a novel Temporal GANs
+conditioning on Caption (TGANs-C) framework for video generation
+sentence embedding encoded by the Long-Short Term Memeory (LSTM) networks is
+concatenated to the noise vector as an input of the generator net-work, which
+produces a sequence of video frames by utilizing 3D convolutions.
+
+video discriminator and frame discriminator- 
+
+- classify realistic videos and frames from the generated ones, respectively
+and also attempt to recognize the semantically matched video/frame caption pairs
+from mismatched ones.
+
+motion discriminator
+-distinguish the displacement between consecutive real  or generated frames
+ to further enhance temporal coherence.
+
+natural image synthesis and video generation
+
+Image synthesis:
+
+There are two main directions on automatically image synthesis:
+1) Variational Auto-Encoders (VAEs) and Generative Adversarial Networks(GANs)
+
+Unlike the aforementioned
+GANs-based approaches which mainly focus on video synthesis in
+an unconditioned manner, our research is fundamentally different
+in the way that we aim at generating videos conditioning on cap-
+tions. In addition, we further improve video generation from the
+aspects of involving frame-level discriminator and strengthening
+temporal connections across frames
+
+The training of TGANs-C is performed
+by optimizing the generator network and discriminator network
+(video and frame discriminators which simultaneously judge syn-
+thetic or real and semantically mismatched or matched with the
+caption for video and frame) in a two-player minimax game mech-
+anism.
+
+the whole architecture is trained with the video-level matching-aware loss, frame-level
+matching-aware loss and temporal coherence loss in a two-player minimax game mechanism
+
+Temporal GANs conditioning on Captions (TGANs-C) framework mainly consists of a generator network G and a discriminator
+network D (better viewed in color). Given a sentence S, a bi-LSTM is first utilized to contextually embed the input word sequence, followed
+by a LSTM-based encoder to obtain the sentence representation S. The generator network G tries to synthesize realistic videos with the
+concatenated input of the sentence representation S and random noise variable z. The discriminator network D includes three discriminators:
+video discriminator to distinguish real video from synthetic one and align video with the correct caption, frame discriminator to determine
+whether each frame is real/fake and semantically matched/mismatched with the given caption, and motion discriminator to exploit temporal
+coherence between consecutive frames. Accordingly, the whole architecture is trained with the video-level matching-aware loss, frame-level
+matching-aware loss and temporal coherence loss in a two-player minimax game mechanism
+
+SBMG. Similar to priors works [22, 23 ] in generating synthetic
+dataset, SBMG is produced by having single handwritten digit
+bouncing inside a 64 × 64 frame. It is composed of 12,000 GIFs and
+every GIF is 16 frames long, which contains a single 28 × 28 digit
+moving left-right or up-down. The starting position of the digit is
+chosen uniformly at random. Each GIF is accompanied with single
+sentence describing the digit and its moving direction, as shown in
+Figure 3(a).
+TBMG. TBMG is an extended synthetic dataset of SBMG which
+contains two handwritten digits bouncing. The generation process
+is the same as SBMG and the two digits within each GIF move
+left-right or up-down separately. Figure 3(b) shows two exemplary
+GIF-caption pairs in TBMG.
+MSVD. MSVD contains 1,970 video snippets collected from
+YouTube. There are roughly 40 available English descriptions per
+video. In experiments, we manually filter out the videos about
+cooking and generate a subset of 518 cooking videos. Following
+the settings in [6], our cooking subset is split with 363 videos for
+training and 155 for testing. Since video generation is a challeng-
+ing problem, we assembled this subset with cooking scenario to
+better diagnose pros and cons of models. We randomly select two
+examples from this subset and show them in Figure 3(c).
+
+
+
