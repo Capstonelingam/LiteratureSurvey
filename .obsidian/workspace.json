@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b1b11c5317914eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cog-a-Video/COG-A-VIDEO.md",
+                "file": "CogView2/CogView2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cog-a-Video/COG-A-VIDEO.md",
+                "file": "CogView2/CogView2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cog-a-Video/COG-A-VIDEO.md",
+                "file": "CogView2/CogView2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cog-a-Video/COG-A-VIDEO.md"
+                "file": "CogView2/CogView2.md"
               }
             }
           }
@@ -159,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b1b11c5317914eb",
+  "active": "e4433d590d9b38a9",
   "lastOpenFiles": [
-    "test.md"
+    "test.md",
+    "CogView2/2204.14217.pdf",
+    "CogView2/CogView2.md",
+    "Cog-a-Video/COG-A-VIDEO.md"
   ]
 }
