@@ -1,0 +1,6 @@
+CODE- https://github.com/Singularity42/cap2vid
+
+DATASETS:
+https://paperswithcode.com/dataset/ucf101
+https://paperswithcode.com/dataset/kth
+https://paperswithcode.com/dataset/moving-mnist
