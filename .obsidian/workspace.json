@@ -11,8 +11,12 @@
             "id": "704d67ae1564570f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Imagen-video/Imagen.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Imagen-video/Imagen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Imagen-video/Imagen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Imagen-video/Imagen.md"
+              }
             }
           }
         ],
@@ -140,6 +148,9 @@
   },
   "active": "704d67ae1564570f",
   "lastOpenFiles": [
+    "Pasted image 20230307085637.png",
+    "Imagen-video/2210.02303 (1).pdf",
+    "2210.02303 (1).pdf",
     "Phenaki/Phenaki.md",
     "Phenaki/Pasted image 20230306225245.png",
     "Video Generation From text/VGT_Notes.pdf",
